@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器的分组与样式继承</title>
+    <style>
+        h1,.test,p{
+            color: #999999;
+        }
+        p{
+            background-color: #0000ff;
+            color: red;
+        }
+        .box{
+            font-size: 18px;
+
+        }
+        .box span{
+            font-size: 12px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <p>p</p>
+    <div class="test">test</div>
+    <h1>h1</h1>
+
+    <div class="box">这是一段测试<span>文字</span>。</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>完整表格</title>
+</head>
+<body>
+<!--
+table[border=1 width=600 align=center ]>(caption{学生信息表})+(thead>tr>th*4)+(tbody>tr*3>td*4)+(tfoot>tr>td[colspan=1])
+-->
+<table border="1" width="600" align="center">
+    <caption>学生信息表</caption>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>电话</th>
+        <th>住址</th>
+        <th>学号</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td align="center">张三*</td>
+        <td>188818888</td>
+        <td>西安</td>
+        <td>002</td>
+    </tr>
+    <tr>
+        <td align="center">李四</td>
+        <td>132323233</td>
+        <td>北京</td>
+        <td>004</td>
+    </tr>
+    <tr>
+        <td align="center">王德法</td>
+        <td>14424144</td>
+        <td>广州</td>
+        <td>005</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">附注：优秀学生后有*</td>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>

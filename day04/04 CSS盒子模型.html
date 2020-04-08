@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS盒子模型</title>
+    <style>
+        .class{
+            width: 800px;
+            height: 400px;
+            border: 1px solid red;
+            display: inline-block;
+        }
+        .content{
+            width:100px;
+            height: 200px;
+            background-color: green;
+            margin:10px 20px;
+            display: inline-block;
+        }
+        .span{
+            width: 300px;
+            height: 200px;
+            /*background-color: #999999;*/
+            display: inline-block;
+            margin-right: 20px;
+            padding: 20px;
+            border: 1px solid blue;
+        }
+        p.txt{
+            width: 100px;
+            height: 100px;
+            background-color: #ff5f69;
+        }
+    </style>
+</head>
+<body>
+    <div class="class">
+        <div class="span">
+            <p class="txt"></p>
+        </div>
+        <div class="content"></div>
+    </div>
+</body>
+</html>

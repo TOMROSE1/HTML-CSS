@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例</title>
+    <style>
+        .info-show{
+            width: 600px;
+            padding: 20px;
+            margin: 100px auto;
+            border: 1px solid#cccccc;
+            overflow: hidden;
+        }
+        .head-sculpture .photo{
+            width: 200px;
+            height: 300px;
+            border: 1px solid#ccc;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;/*垂直居中*/
+            background-color: #999999;
+        }
+        .head-sculpture{
+            float: left;
+            margin-right: 40px;
+        }
+        .description{
+            float: left;
+            height: 300px;
+            width: 300px;
+            border: 1px solid#ccc;
+            padding: 10px 0 0 20px;/*上 右 下 左*/
+        }
+        .txt{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <!--  .info-show>.head-sculpture>.photo+.txt-->
+  <div class="info-show">
+      <div class="head-sculpture">
+          <div class="photo">头像</div>
+          <div class="txt">姓名</div>
+      </div>
+      <div class="description">描述</div>
+  </div>
+</body>
+</html>

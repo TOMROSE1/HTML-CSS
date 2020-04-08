@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding:0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.carousel{
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+   /* background-color: #666666;*/
+    position: relative;/*相对定位脱离文档流，它相对于position:relative定义的元素进行定位*/
+    overflow: hidden;
+}/*轮播组图*/
+.carousel-img{
+    width: 99999px;
+}
+.carousel-img li{
+    float: left;
+}
+.carousel-img img{
+    width: 1000px;
+    height: 300px;
+}/*控制器*/
+.prev,.next{
+    width: 32px;
+    height: 32px;
+    position: absolute;/*绝对定位，*/
+    top: 50%;
+    margin-top: -16px;
+}
+.prev{
+    background-image: url(../img/prev.png);
+    left: 50px;
+}
+.next{
+    background-image: url(../img/next.png);
+    right: 50px;
+}
+/*3.计数器*/
+.count{
+    width: 1000px;
+    height: 10px;
+    position: absolute;/*绝对定位*/
+    bottom: 15px;
+}
+.count ul{
+    width: 60px;
+    margin: 0 auto;
+}
+.count ul li{
+    width: 10px;
+    height: 10px;
+    cursor: pointer;/*将鼠标形状设为手型*/
+    background-color: #666;
+    opacity: .5;/*不透明度，取值范围是从0-1之间的数，可以是小数*/
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;/*圆角*/
+}
+.count .active{
+    background-color: cornflowerblue;
+    opacity: 1;
+}

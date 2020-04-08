@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS属性选择器</title>
+    <style>
+        div.content[title]{
+            font-weight: bold;
+        }
+        input[name=usr]{
+            background-color: #999999;
+        }
+       /* div[class~=box1]{
+            background-color: green;
+        }*/
+        /*div[class^=content2]{
+            background-color: green;
+        }*/
+        div[class$=content2]{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="content1 box1 box2" title="1">content1</div>
+    <div class="content2">content1</div>
+
+    <form action="#">
+        <input type="text" name="account">
+        <input type="text" name="usr">
+    </form>
+</body>
+</html>

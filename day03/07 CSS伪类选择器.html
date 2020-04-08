@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS伪类选择器</title>
+    <style>
+        a:link{/*这里的link可以省略*/
+            color: red;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: blue;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        input:focus{
+            color: #5bf7ff;
+        }
+
+        ul li :first-child{
+            color: purple;
+        }
+        ul li:nth-child(2){
+            color: #ff345c;
+        }
+        ul li:last-child{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">点击这里跳转</a>
+
+    <input type="text">
+
+    <ul>
+        <li>www</li>
+        <li>www</li>
+        <li>www</li>
+    </ul>
+</body>
+</html>

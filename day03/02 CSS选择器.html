@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器</title>
+    <!--* 1）*：匹配html中所有元素（注意：*的性能差，因为他要匹配所有元素，所以在开发时，不建议使用）-->
+    <style>
+        * {
+            color: red;
+        }
+        /*2）：标签选择器：用来匹配对应的标签*/
+        span {
+            color: chartreuse;
+            font-size: 18px;
+            background-color: #5bf7ff;
+            border: 1px solid red;
+            display: block;
+        }
+        /*3）：类选择器：用来选择class命名的标签*/
+        .mmd {
+            color: black;
+            font-style: italic;
+        }
+        /*4）：ID选择器：用来选择用id命名的标签*/
+        #content{
+            color: pink;
+        }
+        .box2 li{
+            color: #5bf7ff;
+        }
+    </style>
+</head>
+<body>
+    <p>选择器</p>
+
+    <span>这是一句话</span>
+    <span>这是一句话</span>
+
+    <p class="mmd">大家好</p>
+    <span class="mmd">大家好</span>
+
+    <p id="content">你好</p>
+
+    <ul class="box1">
+        <li>001001</li>
+        <li>001002</li>
+    </ul>
+
+    <ul class="box2">
+        <li>001001</li>
+        <li>
+            <ul>001002
+                <li>uer00</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

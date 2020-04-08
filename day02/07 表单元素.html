@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单元素</title>
+</head>
+<body>
+    <form action="test.jsp">
+        <!--1.文本框-->
+        <!--input type="text" placeholder="请输入姓名" value="1000" disabled ><br>-->
+        <!--<input type="text" placeholder="请输入姓名" value="1000" readonly="readonly" ><br>-->
+        <input type="text" placeholder="请输入姓名" value="1000" minlength="3" maxlength="6" ><br>
+
+
+        <!--2.密码框-->
+        <!--和文本框一样-->
+        <input type="password">
+
+
+        <!--3.radio单选钮-->
+        <input type="radio" name="sex" checked>男
+        <input type="radio" name="sex">女
+        <input type="radio" name="num">1
+        <input type="radio" name="num" checked>2
+        <input type="radio" name="num">3 <br>
+
+
+        <!--4.checkbox复选按钮-->
+        <input type="checkbox" name="hobby" checked>听音乐
+        <input type="checkbox" name="hobby" checked>看电影
+        <input type="checkbox" name="hobby" checked>吃饭 <br>
+
+        <!--5.文件上传按钮-->
+        <input type="file"><br>
+
+        <!--6.button普通按钮-->
+        <input type="button" value="登录"> <br>
+    <!--    <input type="button" value="登录" disabled>-->
+        
+        <!--7.图片按钮-->
+        <input type="image" src="01%20标签通用属性.html" title="刷新">
+
+        <!--8.提交按钮-->
+        <input type="submit" ><br>
+        
+        <!--9.重置按钮-->
+        <input type="reset" value="取消">
+        <input type="reset" >
+    </form>
+</body>
+</html>

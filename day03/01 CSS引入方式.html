@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS引入方式</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!--2）.内部样式表：在文件的内部书写样式-->
+    <style>
+        @import "../CSS/test.css";
+        p {
+            background-color: #eeeeee;
+            color: red;
+            font-size: 18px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!--1）.行间样式(嵌入式)：直接在标签上书写样式-->
+    <div style="color: blue;background-color:#fff;width:100px;border:1px solid #0000ff;">行间样式测试1</div>
+    <div>行间样式测试2</div>
+
+    <p>内部样式测试</p>
+
+    <span>外部样式测试</span>
+
+    <div class="box">导入外部样式</div>
+    <div class="box">导入外部样式</div>
+    <div class="box">导入外部样式</div>
+
+    <em class="box">大家好！</em>
+</body>
+</html>
